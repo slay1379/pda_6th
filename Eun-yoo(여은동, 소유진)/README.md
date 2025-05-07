@@ -257,6 +257,11 @@ print(f"⚙️  CPU Usage (over task): {cpu_usage_percent:.2f}%")
 
 <br></br>
 ## 📰 주제 3: 오늘의 뉴스를 통해 주식 시장 흐름을 파악해보자
+### 🧠 ELECTRA란?
+ELECTRA는 BERT와 유사한 구조의 Transformer 기반 언어 모델이다.
+beomi라는 유명한 한국 NLP 연구자가 공개한 모델로, 2022년 최신 한국 뉴스/커뮤니티 데이터셋으로 사전 학습되었다.
+그 덕분에 한국어 문장에 대해 감정(긍/부정)을 판별할 수 있다.
+
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 import requests
