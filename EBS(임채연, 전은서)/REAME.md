@@ -68,7 +68,7 @@
 
 ## 📈 시각화 그래프
 
-![image.png](attachment:07db7e6b-9923-4804-9a4d-69a8fc46159c:image.png)
+![image.png](https://isyoudwn.notion.site/image/attachment%3A07db7e6b-9923-4804-9a4d-69a8fc46159c%3Aimage.png?table=block&id=1ec63371-3678-8054-b40a-fe93752b125f&spaceId=ea7f5970-fe44-4506-aa2b-500766ca5b0d&width=1420&userId=&cache=v2)
 
 ---
 
@@ -88,12 +88,12 @@
 
 t4g-small
 
-![image.png](attachment:6b151a3a-a3aa-4415-b549-49be49603233:image.png)
+![image.png](https://isyoudwn.notion.site/image/attachment%3A6b151a3a-a3aa-4415-b549-49be49603233%3Aimage.png?table=block&id=1ec63371-3678-8095-b496-ecce45b87f0e&spaceId=ea7f5970-fe44-4506-aa2b-500766ca5b0d&width=1420&userId=&cache=v2)
 
 t3a-small
 
-![image.png](attachment:90e9cad1-452b-4028-a780-aef7b7d50804:image.png)
+![image.png](https://isyoudwn.notion.site/image/attachment%3A90e9cad1-452b-4028-a780-aef7b7d50804%3Aimage.png?table=block&id=1ec63371-3678-80d0-bc76-d34ba06042b5&spaceId=ea7f5970-fe44-4506-aa2b-500766ca5b0d&width=1420&userId=&cache=v2)
 
 t3.small
 
-![image.png](attachment:e90b058d-add0-41da-be64-c74707221fb1:image.png)
+![image.png](https://isyoudwn.notion.site/image/attachment%3Ae90b058d-add0-41da-be64-c74707221fb1%3Aimage.png?table=block&id=1ec63371-3678-80c4-a3aa-cba0a3ba6d4c&spaceId=ea7f5970-fe44-4506-aa2b-500766ca5b0d&width=1420&userId=&cache=v2)
