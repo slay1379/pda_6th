@@ -90,7 +90,7 @@ echo "테스트 완료. 결과는 cpu_results.txt, memory_results.txt, fileio_re
 sysbench cpu --cpu-max-prime=50000 run | tee -a cpu_results.txt
 ```
 
-- `-cpu-max-prime=50000`: 1부터 20,000까지의 소수(prime number)를 계산 (부하량 조절)
+- `-cpu-max-prime=50000`: 1부터 50,000까지의 소수(prime number)를 계산 (부하량 조절)
   - 적당한 수준의 연산 부하를 유발
   - 너무 낮으면 성능 차이를 측정하기 어렵고, 너무 높으면 과도한 시간 소모가 발생
 - 모든 인스턴스에 동일하게 적용 (CPU 연산 비교용)
@@ -225,7 +225,7 @@ sysbench fileio --file-total-size=10G --file-num=4 cleanup
 
 # 3. 결과 분석
 
-## 3.1. 리소스 특화 인스턴스 비교 (`i3.large`, `c5.large`, `r5.large`, `t3.large`)
+## 3.1. 리소스 특화 인스턴스별 성능 비교 (`i3.large`, `c5.large`, `r5.large`, `t3.large`)
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 1rem;">
   <img src="./images/resource_comp_cpu.png" alt="CPU Benchmark" style="width: 32%;">
@@ -300,7 +300,7 @@ sysbench fileio --file-total-size=10G --file-num=4 cleanup
 - **스토리지 중심 워크로드**: `i3.large` 또는 `r5.large` 추천
 - **밸런스가 필요한 경우**: `t3.large`는 저렴하면서 무난한 성능
 
-## 3.2. T3 계열 인스턴스 성능 스케일 분석 (`t3.small`, `t3.medium`, `t3.large`)
+## 3.2. T3 계열 인스턴스 스케일별 성능 비교 (`t3.small`, `t3.medium`, `t3.large`)
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 1rem;">
   <img src="./images/t3_comp_cpu.png" alt="T3 CPU Benchmark" style="width: 32%;">
@@ -374,7 +374,7 @@ sysbench fileio --file-total-size=10G --file-num=4 cleanup
 - **I/O 처리량 우선 시**: `t3.large`가 명확한 우위 (디스크 처리량 기준)
 - **저가 테스트/학습 목적**: `t3.small`도 메모리 성능에서는 큰 차이 없음
 
-## 3.3. T2 vs T3 인스턴스 세대 성능 비교 (`t3.large` vs `t2.large`)
+## 3.3. T2 vs T3 인스턴스 세대별별 성능 비교 (`t3.large` vs `t2.large`)
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 1rem;">
   <img src="./images/gen_comp_cpu.png" alt="Gen CPU Benchmark" style="width: 32%;">
@@ -433,9 +433,9 @@ sysbench fileio --file-total-size=10G --file-num=4 cleanup
 
 ---
 
-- **균형 잡힌 CPU 성능과 비용 효율**이 중요하다면 `t3.medium`이 가장 적절한 선택
-- <strong>스토리지 처리량(읽기/쓰기)</strong>이 중요한 워크로드에서는 `t3.large`가 우수한 성능을 발휘
-- **가벼운 실험, 테스트, 교육용 목적**이라면 `t3.small`도 메모리 성능 면에서 큰 차이가 없어 충분히 활용 가능
+- Burst가 필요한 짧은 CPU 집약적 작업에는 t2.large
+- 지속적 워크로드 또는 디스크 I/O 중심 작업에는 t3.large가 더 합리적임
+
 
 # 4. 결론
 
@@ -466,9 +466,8 @@ sysbench fileio --file-total-size=10G --file-num=4 cleanup
     </tr>
     <tr>
       <td>
-        • <strong>균형 잡힌 CPU 성능과 비용 효율</strong>이 중요하다면 <code>t3.medium</code>이 가장 적절한 선택<br>
-        • <strong>스토리지 처리량(읽기/쓰기)</strong>이 중요한 워크로드에서는 <code>t3.large</code>가 우수한 성능을 발휘<br>
-        • <strong>가벼운 실험, 테스트, 교육용 목적</strong>이라면 <code>t3.small</code>도 메모리 성능 면에서 큰 차이가 없어 충분히 활용 가능
+        • Burst가 필요한 짧은 CPU 집약적 작업에는 <code>t2.large</code>이 가장 적절한 선택<br>
+        • 지속적 워크로드 또는 디스크 I/O 중심 작업에는 <code>t3.large</code>가 우수한 성능을 발휘<br>
       </td>
     </tr>
   </tbody>
