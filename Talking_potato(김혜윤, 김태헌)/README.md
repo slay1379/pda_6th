@@ -54,10 +54,12 @@ Flask 서버에 여러 사용자가 일정 시간 동안 동시에 HTTP 요청�
 | c7g.medium   | 52       | 208      | 1470  | 0.00    | **46,667** |
 
 ### 3‑1 Throughput & 가성비
-![rps_combo (1)](https://github.com/user-attachments/assets/c9373199-8d52-46fa-9031-245353b0cf91)
+![rps_combo (1)](https://github.com/user-attachments/assets/914c5b98-b503-41ea-92ef-7cda57a73c1a)
+
 
 ### 3‑2 Latency 분포
-![latency_box](https://github.com/user-attachments/assets/421b82d3-46d6-4776-af97-5d427ee67f48)
+![latency_box](https://github.com/user-attachments/assets/718ee76d-a5d1-463b-acb0-3f19f55f99b7)
+
 
 ## 3-3. Duration 모드 개별 실행 결과
 
