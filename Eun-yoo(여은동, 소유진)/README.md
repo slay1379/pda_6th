@@ -236,6 +236,9 @@ print(f"⚙️  CPU Usage (over task): {cpu_usage_percent:.2f}%")
   </tr>
 </table>
 
+### 실행 결과 예시
+<img width="353" alt="2  LSTM 결과 예시" src="https://github.com/user-attachments/assets/9d040e8a-8263-456e-9d15-74a975125d70" />
+
 ### 🔍 왜 이렇게 나왔을까? 비용이 중요하면 t2.micro, 성능이 중요하면 m5.large
 1. 계산량은 작지만 **벡터 연산 집중**
 - LSTM은 내부적으로 `matrix multiplication`, `sigmoid`, `tanh` 등의 연산을 반복한다.
@@ -333,8 +336,11 @@ for i in range(len(articles)):
   </tr>
 </table>
 
-### 🔍 왜 이렇게 나왔을까? x86 기반의 CPU가 좋은 인스턴스가 유리하다.
+### 실행 결과 예시
+<img width="491" alt="3  news 결과 예시" src="https://github.com/user-attachments/assets/ce06bd24-b766-4015-9e85-7ef13d35aee5" />
 
+
+### 🔍 왜 이렇게 나왔을까? x86 기반의 CPU가 좋은 인스턴스가 유리하다.
 1. 사전학습 모델 로딩 & 추론은 메모리 의존도가 높음
 - `beomi/KcELECTRA`는 BERT 기반 사전학습 모델이다.
 - 약 **100MB 이상의 가중치**와 **문장 단위 토큰화 처리**가 필요하며, 실행 시 **600~1200MB의 메모리를 점유**하게 된다.
