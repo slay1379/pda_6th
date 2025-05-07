@@ -163,7 +163,7 @@ print(f": Total Time: {end - start:.2f} seconds")
 측정 지표:  
 - **CPU 처리량 (CPU utilization %)**
 - **처리 시간 (Execution time in seconds)**
-- **네트워크 입출력 (Network I/O, 입력/출력 MB)**
+- **실행 비용(running cost)**
 
 
 ### 5.1 인스턴스 크기 비교 (`large` vs `xlarge`)
