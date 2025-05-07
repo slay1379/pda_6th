@@ -80,6 +80,23 @@ sysbench fileio --file-total-size=1G prepare
 CREATE DATABASE sbtest;
 ```
 
+### sysbench를 통한 mariadb database 테스트
+| 옵션 | 값 | 설명 |
+| --- | --- | --- |
+| `sysbench` | - | 성능 테스트를 실행하는 명령어 도구. CPU, 메모리, 디스크, 데이터베이스 등의 성능을 측정할 수 있음. |
+| `--db-driver` | `mysql` | 사용할 데이터베이스 드라이버 지정. 여기서는 MySQL을 대상으로 테스트함. |
+| `--mysql-host` | `localhost` | MySQL이 실행 중인 호스트 주소. 로컬 머신에서 실행 중이므로 `localhost`로 설정됨. |
+| `--mysql-user` | `root` | DB에 접근할 사용자 계정. `root`는 MySQL의 기본 관리자 계정. |
+| `--mysql-password` | `1234` | DB 접속을 위한 비밀번호. 테스트 목적이므로 단순한 비밀번호 사용. |
+| `--mysql-db` | `sbtest` | 벤치마크용 테스트 대상 데이터베이스 이름. 사전에 생성되어 있어야 함. |
+| `--table-size` | 10000 | 테스트용 테이블에 삽입될 행(row)의 개수. 총 100만 건의 데이터를 대상으로 부하 테스트 수행. |
+| `--threads` | 100 | 동시 실행할 클라이언트(스레드) 수. 다중 사용자 시나리오를 시뮬레이션하기 위해 10개의 스레드로 병렬 처리함. |
+| `oltp_read_write` | - | 테스트 타입 지정. `OLTP(Online Transaction Processing)` 환경에서 읽기 + 쓰기 복합 부하 시나리오를 테스트함. |
+| `run` | - | 테스트를 실행하는 명령. 위 설정으로 실제 부하를 수행함. |
+
+
+
+
 테스트 데이터 준비 (100만개 데이터 삽입)
 
 ```jsx
