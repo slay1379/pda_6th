@@ -474,7 +474,7 @@ sysbench fileio --file-total-size=10G --file-num=4 cleanup
   </tbody>
 </table>
 
-### 4.1.1 **컴퓨팅 최적화 인스턴스 (예측 결과 - `c5.large`)**
+### 4.1.1 **컴퓨팅 최적화 인스턴스 (예측 결과 : `c5.large`)**
 
 ---
 
@@ -483,7 +483,7 @@ sysbench fileio --file-total-size=10G --file-num=4 cleanup
 - 메모리/스토리지는 보통 수준
 - **AWS의 “컴퓨팅 최적화” 분류와 실제 성능 일치**
 
-### 4.1.2. **메모리 최적화 인스턴스 (예측 결과 - `r5.large`)**
+### 4.1.2. **메모리 최적화 인스턴스 (예측 결과 : `r5.large`)**
 
 ---
 
