@@ -49,7 +49,8 @@ if __name__ == '__main__':
 
 ## ⏱ 평균 응답 시간 (초)
 
-![output (2)](https://github.com/user-attachments/assets/20dea761-111f-4e78-aa4e-26b1843cb9a2)
+![Uploading output (3).png…]()
+
 
 | 요청 수 | t2.nano | t2.xlarge | t3.nano | t3.xlarge | m5.large | m5.xlarge | c5.large | c5.xlarge |
 |----------|---------|-----------|---------|-----------|----------|-----------|----------|-----------|
