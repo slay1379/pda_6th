@@ -27,7 +27,7 @@
 ---
 
 ## 4. 테스트 코드 소개
-test.csv
+### test.csv
 ```js
 import pandas as pd
 import numpy as np
@@ -109,7 +109,7 @@ df.to_csv("transactions_with_1_percent_anomaly.csv", index=False)
 print("✅: 이상 거래 1% 포함한 데이터 생성 완료!")
 ```
 
-test.py
+### test.py
 ```js
 import pandas as pd
 import numpy as np
