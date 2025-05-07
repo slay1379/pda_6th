@@ -144,6 +144,7 @@ sysbench fileio --file-total-size=10G --file-num=4 cleanup
 
 ## 2.1. 실험 결과 예측
 
+![AWS EC2 인스턴스 유형 분류](./images/ec2.png)
 ### 2.1.1. 리소스 특화 인스턴스 비교
 
 ---
