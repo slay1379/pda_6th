@@ -21,19 +21,19 @@ Threads started!
 
 
 File operations:
-    reads/s:                      2189.25
-    writes/s:                     1459.50
-    fsyncs/s:                     146.25
+    reads/s:                      2189.25 # 초당 읽기 작업
+    writes/s:                     1459.50 # 초당 쓰기 작업
+    fsyncs/s:                     146.25 # 초당 디스크 강제 기록
+# 총 IOPS(입출력 횟수/초) => 3648.75 IOPS
+Throughput: # 처리 속도
+    read, MiB/s:                  34.21 # 읽기 속도
+    written, MiB/s:               22.80 # 쓰기 속도
 
-Throughput:
-    read, MiB/s:                  34.21
-    written, MiB/s:               22.80
-
-General statistics:
+General statistics: # IO 이벤트 수행량
     total time:                          10.0017s
     total number of events:              37959
 
-Latency (ms):
+Latency (ms): # 지연 시간
          min:                                    0.00
          avg:                                    0.26
          max:                                    5.69

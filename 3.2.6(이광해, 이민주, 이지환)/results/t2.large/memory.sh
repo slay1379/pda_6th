@@ -15,16 +15,16 @@ Initializing worker threads...
 
 Threads started!
 
-Total operations: 10240 (19168.69 per second)
+Total operations: 10240 (19168.69 per second) # 1MiB * 10240 = 10240MiB = 10GiB 총 쓰기
 
-10240.00 MiB transferred (19168.69 MiB/sec)
+10240.00 MiB transferred (19168.69 MiB/sec) # 평균 속도
 
 
 General statistics:
     total time:                          0.5325s
     total number of events:              10240
 
-Latency (ms):
+Latency (ms): # 지연 시간, 1MiB write 작업에 소요된 시간
          min:                                    0.04
          avg:                                    0.05
          max:                                    1.42

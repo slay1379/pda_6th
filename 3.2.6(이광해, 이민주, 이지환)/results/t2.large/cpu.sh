@@ -12,18 +12,18 @@ Initializing worker threads...
 Threads started!
 
 CPU speed:
-    events per second:   254.65
+    events per second:   254.65 # 초당 처리된 작업 수
 
-General statistics:
+General statistics: # 10초 동안 테스트를 실행해서 총 실행한 작업 수
     total time:                          10.0003s
     total number of events:              2547
 
-Latency (ms):
+Latency (ms): # 지연 시간, 한 번의 소수 판별 연산에 걸린 시간
          min:                                    3.08
          avg:                                    3.92
          max:                                    5.95
          95th percentile:                        4.41
-         sum:                                 9993.72
+         sum:                                 9993.72 # 총 지연 시간의 합계가 테스트 시간과 거의 일치함
 
 Threads fairness:
     events (avg/stddev):           2547.0000/0.00
