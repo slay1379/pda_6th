@@ -12,6 +12,8 @@ Flask 기반 API(`/api/calc`)의 연산 성능을 AWS EC2 인스턴스 유형별
 - **성격**: 컴퓨팅 집약적 (CPU 성능 중심)
 
 ## 🖥️ 테스트 코드
+
+```python
 from flask import Flask
 app = Flask(__name__)
 @app.route("/api/calc")
@@ -20,6 +22,7 @@ def calc():
     return str(x)  #단순 문자열로 반환
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+```
 
 ## 🧪 테스트 환경
 
